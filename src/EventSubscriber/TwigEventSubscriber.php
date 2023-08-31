@@ -9,7 +9,6 @@ use Twig\Environment;
 
 class TwigEventSubscriber implements EventSubscriberInterface
 {
-
     private Environment $twig;
     private ConferenceRepository $conferenceRepository;
 
@@ -30,5 +29,4 @@ class TwigEventSubscriber implements EventSubscriberInterface
             ControllerEvent::class => 'onControllerEvent',
         ];
     }
-
 }
